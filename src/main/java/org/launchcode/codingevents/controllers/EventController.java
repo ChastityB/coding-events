@@ -59,6 +59,7 @@ public class EventController {
             model.addAttribute("title", "Create Event");
             return "events/create";
         }
+
         eventRepository.save(newEvent);
         return "redirect:";
     }
